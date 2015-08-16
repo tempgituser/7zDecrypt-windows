@@ -1,0 +1,1 @@
+for /f %%i in (T:\pass.txt) do echo %%i|7z l t:\test\allen.7z
