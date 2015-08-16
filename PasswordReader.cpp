@@ -48,7 +48,7 @@ int read(){
 
 		
 	}
-
+	free(passwordline);
 
 
 

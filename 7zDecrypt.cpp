@@ -86,6 +86,7 @@ int zlDecrypt(char* path){
 		}
 	}
 
+	free(password);
 	free(commandPath);
 	free(command);
 
@@ -124,7 +125,7 @@ int main(int argc, char** argv)
 
 
 
-for(int i=0;i<totalnumber;i++){free((void *)dic[i]);}
+for(int i=0;i<MAX_PASSWORD_NUMBER;i++){free((void *)dic[i]);}
 free((void *)dic);
 	return 0;
 }
